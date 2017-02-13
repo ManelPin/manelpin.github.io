@@ -32,6 +32,10 @@
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
 
+#antonio {
+    text-align: right
+}
+
 html {
     overflow-x: hidden;
 }
