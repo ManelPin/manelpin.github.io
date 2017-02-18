@@ -430,6 +430,13 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
+.service-icon {
+  display: block;
+  font-size: 30px;
+  color: #888;
+  margin-bottom: 30px;
+}
+
 /*------------------------------------------------------------------
   	[Footer]
 ------------------------------------------------------------------*/
