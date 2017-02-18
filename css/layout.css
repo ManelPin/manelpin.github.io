@@ -25,7 +25,9 @@ html {
   overflow-x: hidden;
 }
 
-html, html a, body {
+html,
+html a,
+body {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -41,6 +43,10 @@ p {
   color: #a6a7aa;
   line-height: 1.4;
   margin-bottom: 15px;
+}
+
+i {
+  text-rendering: optimizeLegibility;
 }
 
 em,
@@ -89,7 +95,12 @@ span {
   color: #bfc1c7;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   color: #555;
@@ -97,16 +108,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 15px;
 }
 
-h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
   color: #555;
 }
 
-h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover {
   color: #888;
   text-decoration: none;
 }
 
-h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
+h1 > a:focus,
+h2 > a:focus,
+h3 > a:focus,
+h4 > a:focus,
+h5 > a:focus,
+h6 > a:focus {
   text-decoration: none;
 }
 
@@ -536,8 +562,8 @@ fieldset[disabled] .btn-theme {
 
 /* Navbar Logo */
 .header .logo {
-  width: 400px;
-  height: 400px;
+  width: 100px;
+  height: 100px;
   float: left;
   max-height: 50px;
   line-height: 50px;

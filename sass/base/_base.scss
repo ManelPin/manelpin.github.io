@@ -7,7 +7,9 @@ html {
     overflow-x: hidden;
 }
 
-html, html a, body {
+html,
+html a,
+body {
     -webkit-font-smoothing: antialiased;
 }
 
@@ -23,6 +25,10 @@ p {
     margin-bottom: 15px;
 }
 
+i {
+    text-rendering: optimizeLegibility;
+}
+
 em,
 li,
 li a {
@@ -34,7 +40,6 @@ a {
     @include font($family: $font-family-base);
     color: $color-link;
     outline: 0;
-
     &:focus,
     &:hover,
     &:active {
@@ -48,7 +53,6 @@ a {
     position: relative;
     @include font($size: 13px, $weight: 600, $family: $font-family-base);
     text-transform: uppercase;
-
     &:after {
         @include position(absolute, $top: 8px, $right: -15px);
         @include size(9px, 2px);
@@ -62,41 +66,56 @@ span {
     color: #bfc1c7;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     @include font($weight: 700, $family: $font-family-base);
     color: $color-heading;
     line-height: 1.4;
     margin: 0 0 15px;
-
-    > a {
+    >a {
         color: $color-heading;
-
         &:hover {
             color: $color-link-hover;
             text-decoration: none;
         }
-
         &:focus {
             text-decoration: none;
         }
     }
 }
 
-h1 { @include font($size: 40px); }
-h2 { @include font($size: 30px); }
-h3 { @include font($size: 22px); }
-h4 { @include font($size: 22px); }
+h1 {
+    @include font($size: 40px);
+}
+
+h2 {
+    @include font($size: 30px);
+}
+
+h3 {
+    @include font($size: 22px);
+}
+
+h4 {
+    @include font($size: 22px);
+}
 
 ::selection {
     color: $color-white;
     background: $color-base;
     text-shadow: none;
 }
+
 ::-webkit-selection {
     color: $color-white;
     background: $color-base;
     text-shadow: none;
 }
+
 ::-moz-selection {
     color: $color-white;
     background: $color-base;
@@ -108,12 +127,16 @@ h4 { @include font($size: 22px); }
     outline: none;
 }
 
+
 /* Section Seperator */
+
 .section-seperator {
     border-bottom: 1px solid #edf0f2;
 }
 
+
 /* Content Wrapper Link */
+
 .content-wrapper-link {
     @include position(absolute, $top: 0, $left: 0, $right: 0, $bottom: 0);
     display: block;

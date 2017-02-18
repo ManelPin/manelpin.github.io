@@ -80,7 +80,7 @@
 
 .header {
     .logo {
-        @include size(400px);
+        @include size(100px);
         float: left;
         max-height: 50px;
         line-height: 50px;
